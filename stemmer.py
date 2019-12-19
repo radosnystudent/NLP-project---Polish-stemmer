@@ -5,7 +5,7 @@ class Stemmer(tk.Frame):
 
     def __init__(self):
         self.root = tk.Tk()
-        self.root.geometry('500x400')
+        self.root.geometry('450x550')
         tk.Frame.__init__(self, self.root)
         self.master = self.root
         self.init_window()
@@ -15,25 +15,27 @@ class Stemmer(tk.Frame):
 
         tk.Label(self.master,
                  text = 'Podaj wyraz w języku polskim:',
-                 font=("Helvetica", 12)
-                 ).grid(row=0, column=0, columnspan=2, sticky=tk.W)
+                 font=("Helvetica", 12),
+                 anchor=tk.CENTER
+                 ).place(x=220, y=10, anchor="center")
         self.word_entry = tk.Entry(self.master)
-        self.word_entry.grid(row=1, column=0, sticky=tk.W)
+        self.word_entry.place(x=220, y=30, anchor="center")
         
         self.result = tk.Label(self.master,
                           text = '',
-                          font=("Helvetica", 12)
+                          font=("Helvetica", 12),
+                          borderwidth=4
                           )
-        self.result.grid(row=3, column=1, sticky=tk.E)
+        self.result.place(x=220, y=200, anchor="center")
         
         self.btn = tk.Button(self.master,
                   text = "Start",
         )
 
         self.btn.config(command=lambda: self.result.config(text=stemming(self.word_entry.get())))
-        self.btn.grid(row=2, column=0, sticky=tk.N)
+        self.btn.place(x=220, y=60, anchor="center")
         quitButton = tk.Button(self.master, text='Quit', command=self.close_window)
-        quitButton.place(x=380, y=350)
+        quitButton.place(x=350, y=500)
 
 
     def close_window(self):
