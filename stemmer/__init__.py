@@ -4,6 +4,7 @@ from rules import check_rule
 def stemming(word):
     if not word:
         return u'Błędne dane'
+
     word = word.lower()
     steps = list()
     changed = True
@@ -29,8 +30,6 @@ def stemming(word):
                 check, changes = check_rule(word, rule)
                 if check != word and check:
                     steps.append([rule, word, check, changes])
-                    print(f'rule: {rule}\nword: {word} -> {check}\ncutted:'
-                          f'{changes}\n------------')
                     word = check
                     changed = True
             else:
@@ -38,6 +37,10 @@ def stemming(word):
         if not changed or len(word) <= 4:
             break
 
+        return _prepare_results(steps, word)
+
+
+def _prepare_results(steps, word):
     results = str()
     i = 1
     for step in steps:
