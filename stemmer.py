@@ -1,38 +1,45 @@
-from rules import check_rule
+import tkinter as tk
+from stemmer import stemming
 
-word = input("Podaj wyraz w języku polskim:\n> ")
-word = word.lower()
+class Stemmer(tk.Frame):
 
-changed = True
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.geometry('500x400')
+        tk.Frame.__init__(self, self.root)
+        self.master = self.root
+        self.init_window()
 
-all_checks = [
-        'plural suffix',
-        'diminutive suffix',
-        'nouns suffix',
-        'verbs suffix',
-        'verbs prefix',
-        'numerals suffix',
-        'infinitive suffix',
-        'adjective prefix',
-        'adjective suffix',
-        'adverbs suffix',
-        'general suffix'
-]
+    def init_window(self):
+        self.master.title('Stemmer')
 
-while changed:
-    changed = False
-    for rule in all_checks:
-        if len(word) > 4:
-            check, changes = check_rule(word, rule)
-            if check != word and check:
-                print(f'rule: {rule}\nword: {word} -> {check}\ncutted:'
-                      f'{changes}\n------------')
-                word = check
-                changed = True
-        else:
-            break
-    if not changed or len(word) <= 4:
-        break
+        tk.Label(self.master,
+                 text = 'Podaj wyraz w języku polskim:',
+                 font=("Helvetica", 12)
+                 ).grid(row=0, column=0, columnspan=2, sticky=tk.W)
+        self.word_entry = tk.Entry(self.master)
+        self.word_entry.grid(row=1, column=0, sticky=tk.W)
+        
+        self.result = tk.Label(self.master,
+                          text = '',
+                          font=("Helvetica", 12)
+                          )
+        self.result.grid(row=3, column=1, sticky=tk.E)
+        
+        self.btn = tk.Button(self.master,
+                  text = "Start",
+        )
+
+        self.btn.config(command=lambda: self.result.config(text=stemming(self.word_entry.get())))
+        self.btn.grid(row=2, column=0, sticky=tk.N)
+        quitButton = tk.Button(self.master, text='Quit', command=self.close_window)
+        quitButton.place(x=380, y=350)
 
 
-print(f'rdzeń: {word}')
+    def close_window(self):
+        self.master.destroy()
+
+
+app = Stemmer()
+app.root.mainloop()
+
