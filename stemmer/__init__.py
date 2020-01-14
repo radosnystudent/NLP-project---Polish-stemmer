@@ -3,6 +3,7 @@ from rules import Ruler
 import re
 
 def stemming(word : str):
+    originalWord = word
     if not word or not _checkWord(word):
         return u'Błędne dane'
 
@@ -24,20 +25,26 @@ def stemming(word : str):
                     changed = True
             else:
                 break
+
         if not changed or len(word) <= 4:
+            check, changes = ruler.checkRule(word, 'general suffix')
+            if check != word and check:
+                steps.append([rule, word, check, changes])
             break
 
-    return _prepareResults(steps, word)
+    return _prepareResults(steps, word, originalWord)
 
 
-def _prepareResults(steps : list, word : str):
+def _prepareResults(steps : list, word : str, originalWord : str):
     results = str()
     i = 1
-    results += f'word: {word}\npart of speech: {steps[0][0]}\n'
+    partOfSpeech = steps[0][0].replace('suffix', '').replace('prefix','')
+    separator = '-'*70
+    results += f'word: {originalWord}\npart of speech: {partOfSpeech}\n{separator}\n'
     for step in steps:
         results += f'step {str(i)})\n'
         results += f'rule: {step[0]}\nword: {step[1]} -> {step[2]}\n'
-        results += f'cutted: {step[3]}\n------------\n'
+        results += f'cutted: {step[3]}\n{separator}\n'
         i += 1
     results += f'\nstem: {word}'
     return results

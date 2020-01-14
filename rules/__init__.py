@@ -1,16 +1,14 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import re
 import os
 
-
 class Ruler:
 
-    def __init__(self : self):
+    def __init__(self):
         self._dictionary = _readFile()
 
-    def checkRule(self : self, word : str, key : str):
+    def checkRule(self, word : str, key : str):
         if "suffix" in key:
             string = [s for s in self._dictionary[key] if word.endswith(s)]
             while string:
@@ -28,7 +26,7 @@ class Ruler:
                 return re.sub(rf'^{best_match}', '', word), best_match
         return None, None
 
-    def returnKeys(self : self):
+    def returnKeys(self):
         return self._dictionary.keys()
 
 
