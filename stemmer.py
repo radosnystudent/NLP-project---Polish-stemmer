@@ -4,6 +4,12 @@ import tkinter as tk
 import tkinter.scrolledtext as tkst
 from stemmer import stemming
 
+#################################################
+#
+#       Class for create simple GUI app 
+#             using tkinter module
+#
+#################################################
 
 class Stemmer(tk.Frame):
 

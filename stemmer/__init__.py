@@ -41,6 +41,15 @@ def stemming(word : str):
 
 
 def _prepareResults(steps : list, word : str, originalWord : str):
+    
+    '''
+    function create text contains:
+    - starting word
+    - part of the speech
+    - steps done to get stem 
+    - stem
+    '''
+
     results = str()
     i = 1
     partOfSpeech = steps[0][0].replace('suffix', '').replace('prefix','')
@@ -55,8 +64,10 @@ def _prepareResults(steps : list, word : str, originalWord : str):
     return results
 
 def _checkWord(word : str):
+
+    # function checks if user writes one word
+    # and if it's correct (only letters are allowed)
+
     if len(word.split(" ")) > 1:
         return False
-    if not word.isalpha():
-        return False
-    return True
+    return True if word.isalpha() else False
