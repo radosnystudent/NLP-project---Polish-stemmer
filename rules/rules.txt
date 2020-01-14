@@ -1,12 +1,15 @@
-plural suffix: uów,om,ami
-diminutive suffix: eczek,eczko,aczek,iczek,iszek,aszek,uszek,enek,ejek,erek,ek,ak,uątko,ka,ko,uchna,unia,unio,uuś,usia,uszko,yk
-nouns suffix: anin,ant,arka,arz,ot,anka,zacja,uzacją,zacji,acja,acji,uacją,tach,anie,enie,eniu,aniu,yka,ach,ami,nia,niu,cia,ciu,cji,cja,ucją,ce,ta,ba,czyk,uczyńca,udło,uęcie,el,ina,iny,isia,isko,iwo,izacja,izm,jad,lit,lnia,nauta,nica,nik,uówa,uość,ota,owce,owczyni,owicz,owiczka,owiec,uówka,uówna,sko,stwo,uwóz,yni,ysko,yzm,yzna,użer,użerca
-verbs suffix: esz,acz,asz,cie,ueść,ułem,amy,emy,bym,by,esz,ueńka,ueś,asz,uaść,ueć,uać,aj,uać,em,am,uał,uił,uić,uąc,uować,uaś
-verbs prefix: do,od
-numerals suffix: unaście,udziesiąt
-infinitive suffix: uć,uyć
-adjective prefix: przed,naj,po
-adjective suffix: sze,awy,szy,szych,czny,owy,owa,owe,ych,ego,ej,aty,in,letni,liwy,lubny,ny,owate,owski,ski,ysty,ystyczny,użerny,uzłotowy,iej
-adverbs prefix: po
-adverbs suffix: awo,nie,wie,rze,o,niej
-general suffix: u,uą,i,a,uę,y,uę,uł,ia,ie
+plural suffix: ami,om,ów
+diminutive suffix: aczek,aczka,ak,aszek,aszka,eczek,eczka,eczko,ejek,ek,enek,erek,iczek,iczka,iszek,ka,ko,uchna,unia,unio,usia,uszek,uszko,uś,yk,ątko
+participles prefix: nie
+participles suffix: ący,łszy,ty,wszy
+nouns prefix: nie
+nouns suffix: ach,acja,acji,acją,ami,anie,anin,aniu,anka,ant,arka,arz,ba,ce,cia,ciu,cja,cji,cją,czyk,czyńca,dło,el,enie,eniu,ina,iny,isia,isko,iwo,izacja,izm,jad,lit,lnia,nauta,nia,nica,nik,niu,ot,ota,owce,owczyni,owicz,owiczka,owiec,ość,sko,stwo,ta,tach,wóz,yka,yni,ysko,yzm,yzna,zacja,zacji,zacją,ówa,ówka,ówna,ęcie,żer,żerca
+verbs suffix: acz,aj,am,amy,asz,asz,ać,ać,ał,aś,aść,by,bym,cie,em,emy,esz,esz,eć,eńka,eś,eść,ić,ił,ować,ąc,łem
+verbs prefix: do,nie,od,za,
+numerals suffix: dziesiąt,naście
+infinitive suffix: yć,ć
+adjective prefix: nie,naj,po,przed,za
+adjective suffix: ata,aty,awa,awy,czna,czny,ego,ej,iej,in,letni,liwy,lubna,lubny,ny,owa,owate,owe,owski,owy,ski,sza,sze,szy,szych,ych,ysty,ystyczny,złotowy,żerny
+adverbs prefix: po, nie
+adverbs suffix: awo,nie,niej,o,rze,wie
+general suffix: a,i,ia,ie,u,y,ą,ę,ę,ł,ć

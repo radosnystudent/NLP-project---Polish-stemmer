@@ -4,6 +4,7 @@ import tkinter as tk
 import tkinter.scrolledtext as tkst
 from stemmer import stemming
 
+
 class Stemmer(tk.Frame):
 
     def __init__(self):
@@ -41,7 +42,6 @@ class Stemmer(tk.Frame):
         
         quitButton = tk.Button(self.master, text='Quit', command=self.close_window)
         quitButton.place(x=350, y=500)
-
 
     def close_window(self):
         self.master.destroy()

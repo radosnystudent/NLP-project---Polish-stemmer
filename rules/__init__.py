@@ -3,22 +3,29 @@
 import re
 import os
 
+
 class Ruler:
 
     def __init__(self):
         self._dictionary = _readFile()
 
-    def checkRule(self, word : str, key : str):
+    def checkRule(self, word : str, key : str, stepsDone : int):
         if "suffix" in key:
             string = [s for s in self._dictionary[key] if word.endswith(s)]
             while string:
                 if string:
                     best_match = max(string, key=len)
                     rs = re.sub(rf'{best_match}$', '', word)
-                    if len(rs) >= 4:
-                        return rs, best_match
+                    if stepsDone != 0:
+                        if len(rs) >= 4:
+                            return rs, best_match
+                        else:
+                            string.remove(best_match)
                     else:
-                        string.remove(best_match)
+                        if len(rs) >= 3:
+                            return rs, best_match
+                        else:
+                            string.remove(best_match)
         else:
             string = [s for s in self._dictionary[key] if word.startswith(s)]
             if string:
