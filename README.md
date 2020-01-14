@@ -1,4 +1,4 @@
-# stemmer
+# simple stemmer
 Project for the Natural Language Processing classes conducted by dr Rafał Jaworski on UAM in winter term 2019/2020
 
 
