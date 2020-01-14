@@ -1,16 +1,19 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import tkinter as tk
 from stemmer import stemming
 
 class Stemmer(tk.Frame):
 
-    def __init__(self):
+    def __init__(self : self):
         self.root = tk.Tk()
         self.root.geometry('450x550')
         tk.Frame.__init__(self, self.root)
         self.master = self.root
         self.init_window()
 
-    def init_window(self):
+    def init_window(self : self):
         self.master.title('Stemmer')
 
         tk.Label(self.master,
@@ -38,10 +41,9 @@ class Stemmer(tk.Frame):
         quitButton.place(x=350, y=500)
 
 
-    def close_window(self):
+    def close_window(self : self):
         self.master.destroy()
 
 
 app = Stemmer()
 app.root.mainloop()
-

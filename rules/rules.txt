@@ -1,0 +1,12 @@
+plural suffix: uów,om,ami
+diminutive suffix: eczek,eczko,aczek,iczek,iszek,aszek,uszek,enek,ejek,erek,ek,ak,uątko,ka,ko,uchna,unia,unio,uuś,usia,uszko,yk
+nouns suffix: anin,ant,arka,arz,ot,anka,zacja,uzacją,zacji,acja,acji,uacją,tach,anie,enie,eniu,aniu,yka,ach,ami,nia,niu,cia,ciu,cji,cja,ucją,ce,ta,ba,czyk,uczyńca,udło,uęcie,el,ina,iny,isia,isko,iwo,izacja,izm,jad,lit,lnia,nauta,nica,nik,uówa,uość,ota,owce,owczyni,owicz,owiczka,owiec,uówka,uówna,sko,stwo,uwóz,yni,ysko,yzm,yzna,użer,użerca
+verbs suffix: esz,acz,asz,cie,ueść,ułem,amy,emy,bym,by,esz,ueńka,ueś,asz,uaść,ueć,uać,aj,uać,em,am,uał,uił,uić,uąc,uować,uaś
+verbs prefix: do,od
+numerals suffix: unaście,udziesiąt
+infinitive suffix: uć,uyć
+adjective prefix: przed,naj,po
+adjective suffix: sze,awy,szy,szych,czny,owy,owa,owe,ych,ego,ej,aty,in,letni,liwy,lubny,ny,owate,owski,ski,ysty,ystyczny,użerny,uzłotowy,iej
+adverbs prefix: po
+adverbs suffix: awo,nie,wie,rze,o,niej
+general suffix: u,uą,i,a,uę,y,uę,uł,ia,ie
