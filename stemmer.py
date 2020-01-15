@@ -2,7 +2,7 @@
 
 import tkinter as tk
 import tkinter.scrolledtext as tkst
-from stemmer import stemming
+from stemmer import Stemmer
 
 #################################################
 #
@@ -11,12 +11,13 @@ from stemmer import stemming
 #
 #################################################
 
-class Stemmer(tk.Frame):
+class StemmerGUI(tk.Frame):
 
     def __init__(self):
         self.root = tk.Tk()
         self.root.geometry('450x550')
         tk.Frame.__init__(self, self.root)
+        self.stemmer = Stemmer()
         self.master = self.root
         self.results =  None
         self.init_window()
@@ -41,7 +42,7 @@ class Stemmer(tk.Frame):
                   text = "Start",
         )
         
-        self.btn.config(command=lambda: [self.print_results.delete(1.0, tk.END), self.print_results.insert(tk.END, stemming(self.word_entry.get()))])
+        self.btn.config(command=lambda: [self.print_results.delete(1.0, tk.END), self.print_results.insert(tk.END, self.stemmer.stemming(self.word_entry.get()))])
         
         self.btn.place(x=220, y=80, anchor="center")
         
@@ -53,5 +54,5 @@ class Stemmer(tk.Frame):
         self.master.destroy()
 
 
-app = Stemmer()
+app = StemmerGUI()
 app.root.mainloop()

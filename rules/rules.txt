@@ -11,5 +11,5 @@ infinitive suffix: yć,ć
 adjective prefix: nie,naj,po,przed,za
 adjective suffix: ata,aty,awa,awy,czna,czny,ego,ej,iej,in,letni,liwy,lubna,lubny,ny,owa,owate,owe,owski,owy,ski,sza,sze,szy,szych,ych,ysty,ystyczny,złotowy,żerny
 adverbs prefix: po, nie
-adverbs suffix: awo,nie,niej,o,rze,wie
+adverbs suffix: awo,nie,niej,owo,rze,wie
 general suffix: a,i,ia,ie,u,y,ą,ę,ę,ł,ć
