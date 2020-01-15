@@ -4,12 +4,12 @@ participles prefix: nie
 participles suffix: ący,łszy,ty,wszy
 nouns prefix: nie
 nouns suffix: ach,acja,acji,acją,ami,anie,anin,aniu,anka,ant,arka,arz,ba,ce,cia,ciu,cja,cji,cją,czyk,czyńca,dło,el,enie,eniu,ina,iny,isia,isko,iwo,izacja,izm,jad,lit,lnia,nauta,nia,nica,nik,niu,ot,ota,owce,owczyni,owicz,owiczka,owiec,ość,sko,stwo,ta,tach,wóz,yka,yni,ysko,yzm,yzna,zacja,zacji,zacją,ówa,ówka,ówna,ęcie,żer,żerca
-verbs suffix: acz,aj,am,amy,asz,asz,ać,ać,ał,aś,aść,by,bym,cie,em,emy,esz,esz,eć,eńka,eś,eść,ić,ił,ować,ąc,łem
-verbs prefix: do,nie,od,za,
+verbs prefix: do,nie,od,za
+verbs suffix: acz,aj,ał,am,amy,asz,asz,ać,ać,ał,aś,aść,by,bym,cie,em,emy,esz,esz,eć,eńka,eś,eść,ić,ił,ować,ąc,łem
 numerals suffix: dziesiąt,naście
 infinitive suffix: yć,ć
 adjective prefix: nie,naj,po,przed,za
-adjective suffix: ata,aty,awa,awy,czna,czny,ego,ej,iej,in,letni,liwy,lubna,lubny,ny,owa,owate,owe,owski,owy,ski,sza,sze,szy,szych,ych,ysty,ystyczny,złotowy,żerny
-adverbs prefix: po, nie
+adjective suffix: ata,aty,awa,awy,czna,czny,ego,ej,iej,in,letni,liwy,lubna,lubny,ny,owa,owate,owe,owski,owy,ski,sza,sze,szy,szych,ych,ym,ysty,ystyczny,złotowy,żerny
+adverbs prefix: po,nie
 adverbs suffix: awo,nie,niej,owo,rze,wie
-general suffix: a,i,ia,ie,u,y,ą,ę,ę,ł,ć
+general suffix: a,i,u,y,ą,ę,ę,ł,ć

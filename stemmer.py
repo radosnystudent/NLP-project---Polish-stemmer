@@ -4,12 +4,14 @@ import tkinter as tk
 import tkinter.scrolledtext as tkst
 from stemmer import Stemmer
 
+"""
 #################################################
-#
-#       Class for create simple GUI app 
-#             using tkinter module
-#
+#                                               #
+#       Class for create simple GUI app         #
+#             using tkinter module              #
+#                                               #
 #################################################
+"""
 
 class StemmerGUI(tk.Frame):
 
@@ -27,19 +29,19 @@ class StemmerGUI(tk.Frame):
         self.master.title('Stemmer')
 
         tk.Label(self.master,
-                 text = 'Podaj wyraz w języku polskim:',
-                 font=("Helvetica", 12),
-                 anchor=tk.CENTER
-                 ).place(x=220, y=15, anchor="center")
+                text = 'Podaj zdanie (lub wyraz) w języku polskim:',
+                font=("Helvetica", 12),
+                anchor=tk.CENTER
+                ).place(x=220, y=15, anchor="center")
         self.word_entry = tk.Entry(self.master)
-        self.word_entry.place(x=220, y=45, anchor="center")
+        self.word_entry.place(x=220, y=45, anchor="center", width=300, height=30)
         
         self.print_results = tkst.ScrolledText(self.master, font=("Helvetica", 12), width=40, height=18, wrap=tk.WORD)
-        self.print_results.place(x=30, y=100)
+        self.print_results.place(x=32, y=120)
         self.print_results.insert(tk.END, '')
 
         self.btn = tk.Button(self.master,
-                  text = "Start",
+                text = "Start",
         )
         
         self.btn.config(command=lambda: [self.print_results.delete(1.0, tk.END), self.print_results.insert(tk.END, self.stemmer.stemming(self.word_entry.get()))])
