@@ -1,0 +1,17 @@
+{
+    "plural_suffix": "ami,om,ów",
+    "diminutive_suffix": "aczek,aczek,aczka,aczki,ak,aszek,aszka,eczek,eczka,eczko,ejek,ek,enek,erek,iczek,iczka,iszek,ka,ko,uchna,unia,unio,usia,uszek,uszko,uś,utka,utkie,utki,yk,ątko",
+    "participles_prefix": "nie",
+    "participles_suffix": "ący,łszy,ty,wszy",
+    "nouns_prefix": "nie",
+    "nouns_suffix": "ach,acja,acji,acją,ami,anie,anin,aniu,anka,ant,arka,arz,ba,ce,cia,ciu,cja,cji,cją,czyk,czyńca,dło,el,enie,eniu,ie,ina,iny,isia,isko,iwo,izacja,izm,jad,lit,lnia,nauta,nia,nica,nik,niu,ot,ota,owce,owczyni,owicz,owiczka,owiec,ość,sko,stwo,ta,tach,wóz,yka,yni,ysko,yzm,yzna,zacja,zacji,zacją,ówa,ówka,ówna,ęcie,żer,żerca",
+    "verbs_prefix": "do,nie,od,za",
+    "verbs_suffix": "acz,aj,ał,am,amy,asz,asz,ać,ać,ał,aś,aść,by,bym,cie,em,emy,esz,esz,eć,eńka,eś,eść,ić,ił,ować,ąc,łem",
+    "numerals_suffix": "dziesiąt,naście",
+    "infinitive_suffix": "yć,ć",
+    "adjective_prefix": "nie,naj,po,przed,za",
+    "adjective_suffix": "ata,aty,awa,awy,czna,czny,ego,ej,iej,in,letni,liwy,lubna,lubny,ny,owa,owate,owe,owski,owy,ski,sza,sze,szy,szych,szym,ych,ym,ysty,ystyczny,złotowy,żerny",
+    "adverbs_prefix": "po,nie",
+    "adverbs_suffix": "awo,nie,niej,owo,rze,wie",
+    "general_suffix": "a,i,u,y,ą,ę,ę,ł,ć"
+}
